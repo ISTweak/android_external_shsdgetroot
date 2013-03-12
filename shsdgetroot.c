@@ -677,13 +677,13 @@ int getmodel()
 		return 1;
 	} else if ( !strcmp(model, "SH-02D") || !strcmp(model, "IS13SH") ||
 		!strcmp(model, "IS14SH") || !strcmp(model, "INFOBAR C01") || !strcmp(model, "009SH") ||
-		!strcmp(model, "101SH") || !strcmp(model, "103SH") ) {
+		!strcmp(model, "SBM101SH") || !strcmp(model, "SBM103SH") ) {
 
 		stragetype = 1;
 		shsd_base_addr_hcs1 = 0x8b000000;
 		return 1;
 	} else if ( !strcmp(model, "SH-01D") || !strcmp(model, "SH-06D") ||
-		!strcmp(model, "102SH") ) {
+		!strcmp(model, "SBM102SH") ) {
 
 		stragetype = 1;
 		shsd_base_addr_hcs1 = 0x01000000;
