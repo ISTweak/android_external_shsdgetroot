@@ -669,8 +669,8 @@ int getmodel()
 		return 1;
 	} else if ( !strcmp(model, "SH-12C") || !strcmp(model, "SH-13C") ||
 		!strcmp(model, "SH-04D") || !strcmp(model, "IS05") || !strcmp(model, "INFOBAR A01") ||
-		!strcmp(model, "IS12SH") || !strcmp(model, "IS11SH") || !strcmp(model, "003SH") ||
-		!strcmp(model, "005SH") || !strcmp(model, "006SH") || !strcmp(model, "007SH") ) {
+		!strcmp(model, "IS12SH") || !strcmp(model, "IS11SH") || !strcmp(model, "SBM003SH") ||
+		!strcmp(model, "SBM005SH") || !strcmp(model, "SBM006SH") || !strcmp(model, "SBM007SH") ) {
 
 		stragetype = 0;
 		shsd_base_addr_hcs1 = 0x8b000000;
@@ -683,7 +683,7 @@ int getmodel()
 		shsd_base_addr_hcs1 = 0x8b000000;
 		return 1;
 	} else if ( !strcmp(model, "SH-01D") || !strcmp(model, "SH-06D") ||
-		!strcmp(model, "SBM102SH") ) {
+		!strcmp(model, "SBM102SH") || !strcmp(model, "IS15SH") ) {
 
 		stragetype = 1;
 		shsd_base_addr_hcs1 = 0x01000000;
